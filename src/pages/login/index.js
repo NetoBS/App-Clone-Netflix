@@ -41,7 +41,8 @@ const Login = () => {
 
                 <Button
                     style={styles.marginBottom}
-                    onPress={() => console.log('Pressed')}>
+                    onPress={() => console.log('Pressed')}
+                    theme={{colors: {primary: '#fff'}}}>
                     Recuperar Senha
                 </Button>
 
