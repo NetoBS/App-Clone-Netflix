@@ -1,10 +1,13 @@
 import React from 'react';
-import {Text} from 'react-native';
+import Login from './src/pages/login';
+import {Provider as PaperProvider } from 'react-native-paper';
 
 const App = () => {
   return (
     <>
-      <Text>Hello World!</Text>
+      <PaperProvider>
+        <Login />
+      </PaperProvider>
     </>
   );
 };

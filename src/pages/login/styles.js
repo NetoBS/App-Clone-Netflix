@@ -10,7 +10,11 @@ const styles = StyleSheet.create({
     logo: {
         display: 'flex',
         alignSelf: 'center',
-    }
+        marginBottom: 100,
+    },
+    marginBottom: {
+        marginBottom: 20,
+    },
 })
 
 export default styles;
