@@ -15,6 +15,11 @@ const styles = StyleSheet.create({
     marginBottom: {
         marginBottom: 20,
     },
-})
+    textSmall: {
+        color: 'rgba(255,255,255,0.6)',
+        textAlign: 'center',
+        marginTop: 30,
+    },
+});
 
 export default styles;

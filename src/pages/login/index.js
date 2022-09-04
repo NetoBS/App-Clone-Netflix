@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import {Image, View} from 'react-native';
-import { TextInput } from 'react-native-paper';
+import { Image, View, Text } from 'react-native';
+import { TextInput, Button } from 'react-native-paper';
 
 import styles from './styles'
 
@@ -8,7 +8,7 @@ const Login = () => {
 
     const [credenciais, setCredenciais] = useState({
         email: '',
-        senha: ''
+        senha: '',
     })
     return (
         <View style={styles.bgDark}>
@@ -24,13 +24,31 @@ const Login = () => {
                 />
 
                 <TextInput
-                    mode='flat'
                     label="Senha"
+                    mode='flat'
                     secureTextEntry
                     style={styles.marginBottom}
                     value={credenciais.senha}
-                    onChangeText={(text) => setCredenciais({ ...credenciais, email: senha})}
+                    onChangeText={(text) => setCredenciais({ ...credenciais, senha: text})}
                 />
+
+                <Button
+                    mode="contained"
+                    style={styles.marginBottom}
+                    onPress={() => console.log('Pressed')}>
+                    Entrar
+                </Button>
+
+                <Button
+                    style={styles.marginBottom}
+                    onPress={() => console.log('Pressed')}>
+                    Recuperar Senha
+                </Button>
+
+                <Text style={styles.textSmall}>
+                    O acesso está protegido pelo Google reCAPTCHA para garantir que você não é
+                    um robo. Saiba mais.
+                </Text>
             </View>
             
         </View>
