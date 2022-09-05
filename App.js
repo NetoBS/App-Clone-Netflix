@@ -1,5 +1,5 @@
 import React from 'react';
-import Login from './src/pages/login';
+
 import Home from './src/pages/Home';
 import {DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 
