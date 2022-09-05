@@ -7,7 +7,7 @@ import styles from './styles';
 const Header = () => {
     return (
         <LinearGradient
-            colors={['#000', '#000']}
+            colors={['rgba(0,0,0,0)', 'rgba(0,0,0,0)']}
             style={styles.header}
         >
             <View style={styles.headerSafeAreaView}>
