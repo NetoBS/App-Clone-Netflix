@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity, Image } from 'react-native';
 import LinearGradient from "react-native-linear-gradient";
 
 import styles from './styles';
@@ -11,6 +11,7 @@ const Header = () => {
             style={styles.header}
         >
             <View style={styles.headerSafeAreaView}>
+                <Image source={require('../../assets/logos-netflix-icon.png')}/>
                 <TouchableOpacity>
                     <Text style={styles.textWhite}>Séries</Text>
                 </TouchableOpacity>
