@@ -10,7 +10,11 @@ const styles = StyleSheet.create({
         zIndex: 999,
     },
     headerSafeAreaView: {
-
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        width: '100%',
+        height: 70,
+        alignItems: 'center',
     },
 });
 
