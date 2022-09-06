@@ -7,6 +7,7 @@ import { Button } from "react-native-paper";
 
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
+import ButtonVertical from "../../components/ButtonVertical";
 
 const Home = () => {
     return (
@@ -15,19 +16,11 @@ const Home = () => {
             <Hero />
             
             <View style={styles.menuHeader}>
-                <TouchableOpacity style={styles.menuButton}>
-                    <Icon name="plus" color="#fff" size={20} />
-                    <Text style={styles.buttonText}>Minha Lista</Text>
-                </TouchableOpacity>
-
+                <ButtonVertical icon="plus" text="Minha Lista" />
                 <Button icon="play" mode="contained" color="#fff" uppercase={false}>
                     Assistir
                 </Button>
-
-                <TouchableOpacity style={styles.menuButton}>
-                    <Icon name="information-outline" color="#fff" size={20} />
-                    <Text style={styles.buttonText}>Saiba Mais</Text>
-                </TouchableOpacity>
+                <ButtonVertical icon="information-outline" text="Saiba Mais" />
             </View>
         </View>
     )
