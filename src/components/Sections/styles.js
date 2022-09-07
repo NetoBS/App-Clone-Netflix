@@ -27,6 +27,13 @@ const styles = StyleSheet.create({
         bottom: 20,
         alignSelf: 'center',
     },
+    borderTop: {
+        backgroundColor: '#E50914',
+        height: 3,
+        width: 100,
+        left: 20,
+        marginBottom: 10,
+    },
 });
 
 export default styles;

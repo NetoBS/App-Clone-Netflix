@@ -5,9 +5,12 @@ import { Title } from 'react-native-paper';
 
 import styles from './styles';
 
-const Sections = () => {
+const Sections = ({ hasTopBorder }) => {
     return (
         <View style={styles.container}>
+            
+        {hasTopBorder && <View style={styles.borderTop} />}
+
             <Title style={styles.sectionsTitle}>Nome da Seção</ Title>
 
             <FlatList
