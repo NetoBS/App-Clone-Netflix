@@ -1,5 +1,5 @@
 import React from "react";
-import { View, ScrollView, TouchableOpacity, FlatList, Image } from "react-native";
+import { View, ScrollView } from "react-native";
 
 import styles from "./styles";
 import { Button, Title } from "react-native-paper";
@@ -8,7 +8,7 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import ButtonVertical from "../../components/ButtonVertical";
 import Previews from "../../components/Previews";
-
+import Sections from "../../components/Sections";
 
 
 const Home = () => {
@@ -29,6 +29,10 @@ const Home = () => {
                 <Title style={styles.previewTitle}>Prévias</Title>
                 <Previews />
             </View>
+
+            {[1, 2, 3, 4].map((sections, index) => (
+                <Sections key={index} />
+            ))}
         </ScrollView>
     )
 }
