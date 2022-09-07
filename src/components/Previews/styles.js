@@ -1,6 +1,9 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+    flatListContainer: {
+        marginBottom: 30,
+    },
     circle: {
         backgroundColor: '#E50914',
         padding: 2.5,
