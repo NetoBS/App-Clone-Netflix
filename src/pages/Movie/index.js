@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 
-import { ScrollView, ImageBackground, View, TouchableOpacity, Text } from 'react-native';
+import { 
+    ScrollView, 
+    ImageBackground, 
+    View, 
+    TouchableOpacity, 
+    Text, 
+    FlatList,
+} from 'react-native';
 import { Title, Button, Paragraph, Caption } from 'react-native-paper';
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import ButtonVertical from "../../components/ButtonVertical";
 import Sections from "../../components/Sections";
+import Episode from "../../components/Episode";
 
 import styles from "./styles";
 
@@ -54,6 +62,11 @@ const Movie = () => {
                         <Text style={styles.seasonName}>Temporada 1</Text>
                         <Icon name="chevron-down" color="#fff" size={20} />
                     </TouchableOpacity>
+
+                    <FlatList 
+                        data={[1, 2, 3, 4]}
+                        renderItem={({item, index}) => <Episode key={index}/>}
+                    />
                 </>
             )}
             </View>
