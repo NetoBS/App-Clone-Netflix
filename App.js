@@ -24,7 +24,7 @@ const App = () => {
     <>
       <PaperProvider theme={theme}>
         <StatusBar backgroundColor="#000"/>
-        <Home />
+        <Movie />
       </PaperProvider>
     </>
   );

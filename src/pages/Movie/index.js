@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { ScrollView, ImageBackground, View } from 'react-native';
+import { ScrollView, ImageBackground, View, TouchableOpacity, Text } from 'react-native';
 import { Title, Button, Paragraph, Caption } from 'react-native-paper';
-
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import ButtonVertical from "../../components/ButtonVertical";
 import Sections from "../../components/Sections";
 
 import styles from "./styles";
 
 const Movie = () => {
+    const [type] = useState('serie')
+
     return (
         <ScrollView style={styles.container}>
             <ImageBackground source={{ uri: 'https://images7.alphacoders.com/113/1134920.jpg' }} style={styles.hero} />
@@ -45,9 +47,19 @@ const Movie = () => {
                     <ButtonVertical icon="send" text="Compartilhe" />
                     <ButtonVertical icon="download" text="Baixar" />
                 </View>
+
+                {type == 'serie' && (
+                <>
+                    <TouchableOpacity style={styles.buttonSeason}>
+                        <Text style={styles.seasonName}>Temporada 1</Text>
+                        <Icon name="chevron-down" color="#fff" size={20} />
+                    </TouchableOpacity>
+                </>
+            )}
             </View>
 
-            <Sections hasTopBorder />
+            {type == 'filme' && <Sections hasTopBorder />}
+            
         </ScrollView>
     );
 };
