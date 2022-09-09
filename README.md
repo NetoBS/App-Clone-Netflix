@@ -1,3 +1,3 @@
 # App-Clone-Netflix
 Aplicavivo mobile netflix
-![Screenshot_4](https://user-images.githubusercontent.com/105009963/189259494-65c4b0d2-39af-4af1-a812-8f94aed714fd.png)
+![New Image](https://user-images.githubusercontent.com/105009963/189388341-2d15eec9-c83d-4956-bc2d-3bce75eaa7a0.png)
