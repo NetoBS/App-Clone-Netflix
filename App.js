@@ -13,7 +13,7 @@ const App = () => {
     ...DefaultTheme,
     colors: {
       ...DefaultTheme.colors,
-      primary: '#E50914',
+      primary: '#4db5ff',
       background: '#3C3C3C',
       placeholder: '#ffffff',
       text: '#ffffff',
@@ -24,7 +24,7 @@ const App = () => {
     <>
       <PaperProvider theme={theme}>
         <StatusBar backgroundColor="#000"/>
-        <Movie />
+        <Home />
       </PaperProvider>
     </>
   );

@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
         marginBottom: 30,
     },
     circle: {
-        backgroundColor: '#E50914',
+        backgroundColor: '#4db5ff',
         padding: 2.5,
         width: 90,
         height: 90,

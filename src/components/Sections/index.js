@@ -21,12 +21,12 @@ const Sections = ({ hasTopBorder }) => {
                     <TouchableOpacity key={index}>
                         <ImageBackground 
                             style={[styles.capa, {marginRight: 10, marginLeft: index == 0 ? 20 : 0},]}
-                            source={{ uri: 'https://i.imgur.com/EJyDFeY.jpg' }}
+                            source={{ uri: 'https://images7.alphacoders.com/113/1134920.jpg' }}
                         >
                             <Image 
                                 resizeMode="contain" 
                                 style={styles.logo} 
-                                source={{ uri: 'http://i.imgur.com/4xN7wB8.png' }} 
+                                source={{ uri: 'https://www.seekpng.com/png/full/132-1325626_infinity-war-desktop-wallpaper-and-newest-trailer-avengers.png' }} 
                             />
                         </ImageBackground>
                     </TouchableOpacity>

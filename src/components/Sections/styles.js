@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
     },
     borderTop: {
-        backgroundColor: '#E50914',
+        backgroundColor: '#4db5ff',
         height: 3,
         width: 100,
         left: 20,

@@ -11,7 +11,7 @@ const Header = () => {
             style={styles.header}
         >
             <View style={styles.headerSafeAreaView}>
-                <Image source={require('../../assets/logos-netflix-icon.png')}/>
+                <Image source={require('../../assets/NewLogo.png')}/>
                 <TouchableOpacity>
                     <Text style={styles.textWhite}>Séries</Text>
                 </TouchableOpacity>
