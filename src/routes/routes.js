@@ -3,6 +3,7 @@ import React from "react";
 import Login from '../pages/Login';
 import Home from '../pages/Home';
 import Movie from "../pages/Movie";
+import PaginaTeste from "../pages/PaginaTeste";
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -18,7 +19,7 @@ const HomeTabs= () => {
             initialRouteName="Home"
             activeColor={'#fff'}
             shifting={false}
-            barStyle={{backgroundColor: '#141414'}}>
+            barStyle={{backgroundColor: '#0a0612'}}>
             <Tab.Screen 
                 name="Home" 
                 component={Home}
@@ -31,7 +32,7 @@ const HomeTabs= () => {
             />
             <Tab.Screen 
                 name="buscar" 
-                component={Home}
+                component={PaginaTeste}
                 options={{
                     tabBarLabel: 'Buscar',
                     tabBarIcon: ({ color }) => (
@@ -41,7 +42,7 @@ const HomeTabs= () => {
             />
             <Tab.Screen 
                 name="em-breve" 
-                component={Home}
+                component={PaginaTeste}
                 options={{
                     tabBarLabel: 'Em Breve',
                     tabBarIcon: ({ color }) => (
@@ -51,7 +52,7 @@ const HomeTabs= () => {
             />
             <Tab.Screen 
                 name="downloads" 
-                component={Home}
+                component={PaginaTeste}
                 options={{
                     tabBarLabel: 'Downloads',
                     tabBarIcon: ({ color }) => (
@@ -61,7 +62,7 @@ const HomeTabs= () => {
             />
             <Tab.Screen 
                 name="mais" 
-                component={Home}
+                component={PaginaTeste}
                 options={{
                     tabBarLabel: 'Mais',
                     tabBarIcon: ({ color }) => (
