@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-import Movie from './src/pages/Movie';
+import Routes from './src/routes/routes';
 
 import {DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 
@@ -23,7 +22,7 @@ const App = () => {
     <>
       <PaperProvider theme={theme}>
         <StatusBar backgroundColor="#000"/>
-        <Movie />
+        <Routes />
       </PaperProvider>
     </>
   );
