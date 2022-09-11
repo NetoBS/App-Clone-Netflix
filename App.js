@@ -12,7 +12,7 @@ const App = () => {
     colors: {
       ...DefaultTheme.colors,
       primary: '#4db5ff',
-      background: '#3C3C3C',
+      background: '#0a0612',
       placeholder: '#ffffff',
       text: '#ffffff',
     },

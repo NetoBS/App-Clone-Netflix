@@ -12,7 +12,7 @@ const Login = ({ navigation }) => {
     })
     return (
         <View style={styles.bgDark}>
-            <Image style={styles.logo} source={require('../../assets/logo.png')} />
+            <Image style={styles.logo} source={require('../../assets/logoVideo.png')} />
 
             <View>
                 <TextInput
